@@ -14,6 +14,9 @@ main:
   - title: "Research Projects"
     url: /portfolio/
 
+  - title: "Centrifuge 101"
+    url: /centrifuge-101/
+
   - title: "Datasets"
     url: /datasets/
 

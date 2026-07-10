@@ -217,6 +217,9 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
+  centrifuge101:
+    output: true
+    permalink: /centrifuge-101/:path/
   teaching:
     output: true
     permalink: /:collection/:path/
@@ -233,6 +236,14 @@ collections:
 
 # These settings control how pages and collections are included in the site
 defaults:
+  # _centrifuge101
+  - scope:
+      path: ""
+      type: centrifuge101
+    values:
+      layout: single
+      author_profile: true
+      share: true
   # _posts
   - scope:
       path: ""

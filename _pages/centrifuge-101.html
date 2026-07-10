@@ -1,0 +1,18 @@
+---
+layout: archive
+title: "Centrifuge 101"
+permalink: /centrifuge-101/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p>Everything you wanted to know about geotechnical centrifuge modelling — the physics behind it,
+the machines, the techniques, and the people and experiments that shaped the field. Drawing on my
+experience with centrifuge testing at HKUST, TU Delft, and within the MIDAS/MIDASclay programmes,
+I use this section to share what I have learned and to point newcomers to the right resources.</p>
+
+{% assign sorted = site.centrifuge101 | sort: 'order' %}
+{% for post in sorted %}
+  {% include archive-single.html %}
+{% endfor %}

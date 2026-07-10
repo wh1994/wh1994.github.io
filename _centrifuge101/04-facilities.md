@@ -11,7 +11,7 @@ The survey below covers the facilities registered with [ISSMGE TC104](https://tc
 
 ## Where the world's centrifuges are
 
-![World map of geotechnical centrifuge facilities](/images/centrifuge-world-map.png)
+{% include centrifuge-map.html %}
 
 <div style="display:flex; flex-wrap:wrap; gap:2.5em; align-items:flex-start; margin: 1em 0;">
 <div>

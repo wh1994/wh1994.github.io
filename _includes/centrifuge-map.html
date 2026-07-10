@@ -1,0 +1,89 @@
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<div id="centrifuge-map" style="height: 480px; width: 100%; border-radius: 6px; margin: 1em 0; z-index: 0;">
+  <noscript><img src="/images/centrifuge-world-map.png" alt="World map of geotechnical centrifuge facilities"></noscript>
+</div>
+<p style="font-size: 0.8em; margin-top: -0.5em;">Click a marker for the facility's machines and specs. Marker size reflects the number of centrifuges. A <a href="/images/centrifuge-world-map.png">static version</a> of this map is also available.</p>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+(function () {
+  // [institution, country, lat, lon, [machine specs...]]
+  var facilities = [
+    ["University of Pretoria", "South Africa", -25.75, 28.23, ["Beam (2012): R 3.0 m, 150 g-t, 150 g"]],
+    ["University of Western Australia (NGCF)", "Australia", -31.98, 115.82, ["Beam (2016): R 5.0 m, 240 g-t, 130 g", "Beam (1989): R 1.8 m, 40 g-t, 200 g", "Drum (1998): R 0.6 m, 485 g"]],
+    ["BOKU Vienna", "Austria", 48.24, 16.33, ["Beam (1989): R 1.1 m, 10 g-t, 200 g"]],
+    ["COPPE/UFRJ (LM2C)", "Brazil", -22.86, -43.23, ["Beam (2012): R 0.8 m, 60 g-t, 300 g", "Drum (1995): R 0.5 m, 90 g-t, 200 g"]],
+    ["UENF", "Brazil", -21.76, -41.29, ["Beam (comm. 2010): R 3.75 m, 100 g-t, 200 g"]],
+    ["C-CORE", "Canada", 47.57, -52.73, ["Beam (1993): R 5.5 m, 400 g-t, 200 g"]],
+    ["University of Alberta (GeoCERF)", "Canada", 53.52, -113.53, ["Beam (2012): R 2.0 m, 50 g-t, 150 g"]],
+    ["CRSRI", "China (Wuhan)", 30.55, 114.30, ["Beam (2008): R 3.75 m, 200 g-t, 200 g", "Beam (1983, retired): R 3.0 m, 180 g-t"]],
+    ["Chengdu University of Technology (SKLGP)", "China", 30.68, 104.10, ["Beam (2010): R 4.5 m, 500 g-t, 250 g"]],
+    ["China Earthquake Administration (IEM)", "China (Harbin)", 45.75, 126.65, ["Beam (2019): R 5.5 m, 300 g-t, 100 g"]],
+    ["IWHR", "China (Beijing)", 39.91, 116.30, ["Beam (2023): R 8.5 m, 1000 g-t, 350 g", "Beam (2022): R 4.5 m, 400 g-t, 1000 g", "Beam (1991): R 5.0 m, 450 g-t, 300 g"]],
+    ["Dalian University of Technology", "China", 38.88, 121.53, ["Drum (2009): R 0.7 m, 450 g-t, 600 g"]],
+    ["NHRI", "China (Nanjing)", 32.05, 118.78, ["Beam (1991/2017): R 5.5 m, 400 g-t, 200 g", "Beam (2010): R 2.5 m, 60 g-t, 200 g", "Beam (1983): R 2.25 m, 50 g-t, 250 g", "Mini beam (1980): R 0.5 m, 5 g-t, 250 g"]],
+    ["Southwest Jiaotong University", "China", 30.70, 103.90, ["Beam (2001): R 2.7 m, 150 g-t, 200 g"]],
+    ["TIWTE", "China (Tianjin)", 39.10, 117.20, ["Beam (2018): R 5.0 m, 500 g-t, 250 g"]],
+    ["Tongji University", "China (Shanghai)", 31.28, 121.50, ["Beam (2006): R 3.0 m, 150 g-t, 200 g"]],
+    ["Zhejiang University", "China (Hangzhou)", 30.26, 120.12, ["Beam (2009): R 4.5 m, 400 g-t, 150 g"]],
+    ["DTU", "Denmark", 55.78, 12.52, ["Beam (1976): R 2.6 m, 100 g-t, 85 g"]],
+    ["Université Gustave Eiffel", "France (Nantes)", 47.15, -1.64, ["Beam (1985): R 5.5 m, 200 g-t, 100 g"]],
+    ["HKUST", "Hong Kong", 22.34, 114.26, ["Beam (2001): R 4.2 m, 400 g-t, 120 g", "Drum (2022): R 1.1 m, ~870 g-t, 250 g"]],
+    ["ISMGEO", "Italy (Bergamo)", 45.68, 9.72, ["Beam (1985): R 2.2 m, 240 g-t, 600 g"]],
+    ["CRIEPI", "Japan (Abiko)", 35.87, 140.02, ["Beam (2008): R 3.2 m, 150 g-t, 100 g"]],
+    ["CERI", "Japan (Sapporo)", 43.07, 141.35, ["Beam (2019): R 2.5 m, 92.5 g-t, 100 g"]],
+    ["DPRI, Kyoto University", "Japan", 34.91, 135.80, ["Beam (1988/2010): R 2.5 m, 24 g-t, 200 g"]],
+    ["Hazama Ando Corporation", "Japan (Tsukuba)", 36.08, 140.08, ["Beam (2023): R 3.5 m, 200 g-t, 100 g"]],
+    ["Institute of Science Tokyo", "Japan (Yokohama)", 35.51, 139.48, ["Beam (1994/2023): R 2.3 m, 50 g-t"]],
+    ["Kajima KaTRI", "Japan (Tokyo)", 35.66, 139.55, ["Beam Mark-2 (2002): R 2.4 m, 100 g-t, 100 g"]],
+    ["Maeda Corporation", "Japan", 35.90, 140.05, ["Beam (2018): R 3.5 m, 200 g-t, 100 g"]],
+    ["JNIOSH", "Japan (Kiyose)", 35.79, 139.53, ["Beam Mark II (2004): R 2.4 m, 50 g-t, 100 g"]],
+    ["Nippon Koei", "Japan (Tsukuba)", 36.03, 140.07, ["Beam (1996): R 2.6 m, 100 g-t, 100 g"]],
+    ["PARI", "Japan (Yokosuka)", 35.28, 139.66, ["Beam Mark II-R (1994): R 3.8 m, 312 g-t, 113 g"]],
+    ["Shimizu Institute of Technology", "Japan (Tokyo)", 35.65, 139.80, ["Beam (1991): R 3.1 m, 30 g-t, 100 g"]],
+    ["Tokyo City University", "Japan", 35.60, 139.63, ["Beam Mark III (2022): R 1.4 m, 10 g-t, 100 g"]],
+    ["K-water", "South Korea (Daejeon)", 36.35, 127.38, ["Beam (2013): R 8.0 m, 800 g-t, 150 g"]],
+    ["KAIST (KOCED)", "South Korea (Daejeon)", 36.37, 127.36, ["Beam (2009): R 5.0 m, 240 g-t, 130 g"]],
+    ["Deltares (GeoCentrifuge)", "Netherlands (Delft)", 52.00, 4.38, ["Beam (2021): R 5.0 m, 260 g-t"]],
+    ["TU Delft", "Netherlands", 51.99, 4.37, ["Beam (1990): R 1.2 m, 9 g-t, 300 g"]],
+    ["NUS", "Singapore", 1.30, 103.77, ["Beam (1990): R 2.0 m, 40 g-t, 200 g", "Beam (2023): R 4.5 m, 150 g-t, 120 g"]],
+    ["ETH Zürich", "Switzerland", 47.41, 8.51, ["Beam (2023, ex-Bochum 1985): R 4.1 m, 500 g-t, 250 g", "Drum (1999): R 1.1 m, 880 g-t, 440 g"]],
+    ["National Central University", "Taiwan", 24.97, 121.19, ["Beam (1995): R 3.0 m, 100 g-t, 250 g"]],
+    ["KMITL", "Thailand (Bangkok)", 13.73, 100.78, ["Beam (2023): R 3.7 m, 150 g-t, 150 g"]],
+    ["City, University of London", "UK", 51.53, -0.10, ["Beam (1989): R 1.8 m, 40 g-t, 200 g"]],
+    ["University of Cambridge (Schofield Centre)", "UK", 52.21, 0.09, ["Turner beam (1972): R 4.1 m, 150 g-t, 150 g", "Drum (1995): 400 g-t, 470 g"]],
+    ["University of Nottingham (NCG)", "UK", 52.94, -1.20, ["Beam (2005): R 2.0 m, 50 g-t, 150 g"]],
+    ["University of Dundee", "UK", 56.46, -2.98, ["Beam (1997): R 3.0 m, 150 g-t, 130 g"]],
+    ["RPI (CEES)", "USA (Troy, NY)", 42.73, -73.68, ["Beam (1989/2004): R 2.7 m, 150 g-t, 160 g"]],
+    ["US Army ERDC", "USA (Vicksburg, MS)", 32.30, -90.87, ["Beam (1995/2022): R 6.5 m, 1200 g-t, 350 g"]],
+    ["UC Davis (CGM)", "USA", 38.54, -121.75, ["Beam (1986): R 8.9 m, 300 g-t, 75 g", "Beam (1975): R 1.0 m, 10 g-t, 100 g"]],
+    ["UC San Diego", "USA", 32.88, -117.24, ["Beam (1999): R 2.1 m, 50 g-t, 130 g"]],
+    ["CU Boulder (CIEST)", "USA", 40.01, -105.27, ["Beam (1988): R 5.5 m, 400 g-t, 200 g", "Beam (1981): R 1.2 m, 15 g-t, 100 g"]],
+    ["University of New Hampshire", "USA", 43.13, -70.93, ["Beam (2013, built 1985): R 1.0 m, 5 g-t, 175 g"]],
+    ["University of South Carolina", "USA", 34.00, -81.03, ["Beam (2014, built 1982): R 1.5 m, 15 g-t, 200 g"]],
+    ["NYU Abu Dhabi", "UAE", 24.52, 54.43, ["Beam (2023): R 5.0 m, 260 g-t, 130 g"]]
+  ];
+
+  var map = L.map("centrifuge-map", { scrollWheelZoom: false, worldCopyJump: true })
+             .setView([25, 15], 2);
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a> · Data: <a href="https://tc104-issmge.com/facilities/">ISSMGE TC104</a>',
+    subdomains: "abcd", maxZoom: 12
+  }).addTo(map);
+
+  facilities.forEach(function (f) {
+    var name = f[0], country = f[1], lat = f[2], lon = f[3], machines = f[4];
+    var marker = L.circleMarker([lat, lon], {
+      radius: 5 + 3 * machines.length,
+      color: "#ffffff", weight: 1.5,
+      fillColor: "#1f6f8b", fillOpacity: 0.85
+    }).addTo(map);
+    var html = "<strong>" + name + "</strong><br><em>" + country + "</em><ul style='margin:0.4em 0 0 1.1em; padding:0;'>";
+    machines.forEach(function (m) { html += "<li>" + m + "</li>"; });
+    html += "</ul>";
+    marker.bindPopup(html);
+    marker.bindTooltip(name);
+  });
+})();
+</script>

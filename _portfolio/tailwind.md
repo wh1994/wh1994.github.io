@@ -8,7 +8,7 @@ collection: portfolio
 **Lead:** NGI  
 **Funding:** European Union
 
-TAILWIND develops sustainable station-keeping systems for floating offshore wind, addressing anchoring and mooring technologies that reduce cost and environmental footprint while ensuring long-term integrity of floating wind farms.
+[TAILWIND](https://tailwind-project.eu) develops sustainable station-keeping systems for floating offshore wind, addressing anchoring and mooring technologies that reduce cost and environmental footprint while ensuring long-term integrity of floating wind farms.
 
 **Project partners:** TU Delft, DTU, SINTEF Ocean, Fundación Tecnalia Research & Innovation, Nautilus Floating Solutions, Bekaert Wire Rope Industry, Subsea 7, Fondazione ICONS, Clarke Modet, NKT, Bridon, University of Southampton
 

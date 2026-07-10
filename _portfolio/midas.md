@@ -8,7 +8,7 @@ collection: portfolio
 **Lead:** TU Delft, in cooperation with Deltares  
 **Funding:** RVO (Netherlands Enterprise Agency) / TKI Wind op Zee + industry co-funding
 
-The MIDAS research programme aims to improve the understanding of the long-term cyclic response of monopile foundations in sand through advanced physical and numerical modelling, and to develop novel engineering models and tools for monopile design.
+The [MIDAS](https://grow-offshorewind.nl/project/midas) research programme aims to improve the understanding of the long-term cyclic response of monopile foundations in sand through advanced physical and numerical modelling, and to develop novel engineering models and tools for monopile design.
 
 The project benefits from interaction with industry partners along the whole offshore wind supply chain — wind farm developers (Shell, Eneco, TotalEnergies, RWE), turbine developers (Siemens Gamesa Renewable Energy), and marine contractors (Huisman, IHC, Van Oord) — with NGI and DNV serving on the external technical board.
 

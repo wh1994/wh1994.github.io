@@ -8,7 +8,7 @@ collection: portfolio
 **Lead:** TU Delft  
 **Funding:** RVO (Netherlands Enterprise Agency) + industry co-funding
 
-MIDASclay extends the MIDAS research programme from sand to clay, investigating the cyclic behaviour of monopile foundations in clay through centrifuge testing and advanced numerical modelling, towards improved engineering design methods for monopiles in cohesive soils.
+[MIDASclay](https://grow-offshorewind.nl/project/midasclay) extends the [MIDAS](/portfolio/midas/) research programme from sand to clay, investigating the cyclic behaviour of monopile foundations in clay through centrifuge testing and advanced numerical modelling, towards improved engineering design methods for monopiles in cohesive soils.
 
 **Industry partners:** Huisman, RWE, Siemens Gamesa, TotalEnergies, Van Oord, Vattenfall  
 **Research partners:** Deltares, NGI  

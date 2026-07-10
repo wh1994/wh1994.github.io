@@ -13,7 +13,7 @@ I hold a Ph.D. in Geotechnical Engineering from Zhejiang University and have con
 
 My research integrates advanced physical modelling — including element testing, reduced-scale field testing, and enhanced-gravity centrifuge experiments — with numerical modelling to improve fundamental understanding and develop practical, design-oriented tools. At NGI I apply this research background directly to complex offshore engineering projects, bridging fundamental research and engineering practice.
 
-I have contributed to major international research and industry programmes such as [MIDAS](/portfolio/midas/), [MIDASclay](/portfolio/midasclay/), [PIGS](/portfolio/pigs/), [TAILWIND](/portfolio/tailwind/), and GEOLAB, publish regularly in leading geotechnical journals, and collaborate actively with industry and academic partners worldwide. I serve as an Associate Editor of the *International Journal of Physical Modelling in Geotechnics*.
+I have contributed to major international research and industry programmes such as [MIDAS](/portfolio/midas/), [MIDASclay](/portfolio/midasclay/), [PIGS](/portfolio/pigs/), [TAILWIND](/portfolio/tailwind/), and [GEOLAB](https://elgip.org/geolab/), publish regularly in leading geotechnical journals, and collaborate actively with industry and academic partners worldwide. I serve as an Associate Editor of the *International Journal of Physical Modelling in Geotechnics*.
 
 Research interests
 ======

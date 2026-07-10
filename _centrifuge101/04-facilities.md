@@ -150,4 +150,4 @@ One row per machine, as self-reported in the TC104 data sheets. Capacity convent
 * Compiled from the [TC104 facility data sheets](https://tc104-issmge.com/facilities/); the registry is not exhaustive — facilities not registered with TC104 are absent.
 * Entries marked * have internally inconsistent numbers in their source sheet (ISMGEO's capacity; the Cambridge drum's diameter/capacity combination) — verify against the original data sheet before citing.
 * Two TC104 entries are not centrifuges and are excluded: HKU (debris-flow flumes) and CEDEX (a full-scale railway track test box).
-* **How to get access:** many facilities offer transnational access through programmes such as GEOLAB.
+* **How to get access:** many facilities offer transnational access through programmes such as [GEOLAB](https://elgip.org/geolab/).

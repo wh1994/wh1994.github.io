@@ -26,6 +26,6 @@ A starting library for anyone who wants to learn centrifuge modelling properly:
 
 **Getting access**
 
-* Transnational access programmes such as GEOLAB open Europe's key facilities to external researchers
+* Transnational access programmes such as [GEOLAB](https://elgip.org/geolab/) open Europe's key facilities to external researchers
 
 *This list will keep growing — recommendations and requests are welcome by [email](mailto:huan.wang@ngi.no).*

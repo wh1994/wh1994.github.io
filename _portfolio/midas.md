@@ -14,6 +14,9 @@ The project benefits from interaction with industry partners along the whole off
 
 Within MIDAS I led and contributed to the centrifuge testing programme on cyclically loaded monopiles in sand and to the development of CPT-based soil reaction models.
 
+**Open datasets:**
+* [MIDAS centrifuge dataset — tests at Deltares](https://doi.org/10.4121/fa710994-f591-453a-b9c8-2759d6cd2f21) and [tests at TU Delft](https://doi.org/10.4121/d04edde3-c05d-4818-9f64-bf1a2f3f86a6), both on 4TU.ResearchData (see [Datasets](/datasets/))
+
 **Selected outputs:**
 * [Physical modelling of cyclically loaded monopiles in sand: the MIDAS centrifuge testing programme (ISFOG 2025)](/publication/2025-06-03-physical-modelling-of-cyclically-loaded-monopiles-in-sand)
 * [MIDAS: Monopile Improved Design through Advanced cyclic Soil modelling (ICSMGE 2021)](/publication/2021-05-01-midas-monopile-improved-design-through-advanced-cyclic-soil)

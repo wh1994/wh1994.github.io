@@ -16,6 +16,11 @@ Typical applications include:
 * Foundations and anchors for offshore wind and oil & gas (monopiles, suction caissons, jack-ups, plate anchors)
 * Cyclic and long-term loading — from wave and storm sequences to thousands of load cycles
 * Installation processes — pile driving, suction installation, penetrometer testing in flight
-* Slopes, dams, tunnels, and earthquake response using shaking tables in flight
+* Slopes, dams, tunnels, seawalls — essentially any problem where self-weight stresses govern
+* Earthquake response using in-flight shaking tables: large earthquakes are infrequent and unrepeatable in the field, but in the centrifuge alternative designs can be subjected to the same motion, repeatably and safely
+
+Beyond direct design verification, centrifuge tests serve a second crucial role: **benchmarking numerical models**. Because soil behaviour is highly non-linear and stress-dependent, computer simulations need high-quality physical data at correct stress levels to be trusted — and the centrifuge is often the only practical way to produce it.
+
+For a community-endorsed introduction, see the [TC104 fundamental principles page](https://tc104-issmge.com/fundamental-principles/).
 
 *More coming — this page will grow into a proper introduction with example results from my own testing programmes.*

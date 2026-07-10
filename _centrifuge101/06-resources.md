@@ -7,6 +7,11 @@ order: 6
 
 A starting library for anyone who wants to learn centrifuge modelling properly:
 
+**Start here**
+
+* [ISSMGE TC104 — Physical Modelling in Geotechnics](https://tc104-issmge.com/) — the technical committee's site, including its own [Centrifuge 101](https://tc104-issmge.com/fundamental-principles/) (fundamental principles, history, scaling laws, applications) and a documents library
+* Garnier, J. et al. (2007). Catalogue of scaling laws and similitude questions in geotechnical centrifuge modelling. *IJPMG*, 7(3) — the community's definitive scaling-law reference, linked from the [TC104 scaling laws page](https://tc104-issmge.com/scaling-laws/)
+
 **Textbooks & monographs**
 
 * Taylor, R. N. (ed.) — *Geotechnical Centrifuge Technology*

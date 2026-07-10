@@ -25,4 +25,10 @@ A few consequences worth appreciating:
 * **Grain-size effects.** The soil grains are *not* scaled, so the ratio of structure dimension to grain size must stay large enough for the soil to behave as a continuum — a key consideration when modelling piles, cones, and interfaces.
 * **Stress gradient error.** In the centrifuge, "gravity" varies with radius, so the stress profile in the model is slightly non-linear; models are designed so this error stays small (typically a few per cent).
 
+**The definitive reference** for scaling relationships is the TC104 catalogue:
+
+> Garnier, J., Gaudin, C., Springman, S. M., Culligan, P. J., Goodings, D., König, D., Kutter, B., Phillips, R., Randolph, M. F. & Thorel, L. (2007). Catalogue of scaling laws and similitude questions in geotechnical centrifuge modelling. *International Journal of Physical Modelling in Geotechnics*, 7(3), 1–23.
+
+See also the [TC104 scaling laws page](https://tc104-issmge.com/scaling-laws/), which links the full catalogue.
+
 *Planned additions: a worked example of scaling a monopile test, and a discussion of modelling-of-models as a validation technique.*

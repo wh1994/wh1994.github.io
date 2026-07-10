@@ -4,8 +4,8 @@ excerpt: "EU-funded project on sustainable station-keeping (anchoring and moorin
 collection: portfolio
 ---
 
-**Period:** 2023–2027
-**Lead:** NGI
+**Period:** 2023–2027  
+**Lead:** NGI  
 **Funding:** European Union
 
 TAILWIND develops sustainable station-keeping systems for floating offshore wind, addressing anchoring and mooring technologies that reduce cost and environmental footprint while ensuring long-term integrity of floating wind farms.

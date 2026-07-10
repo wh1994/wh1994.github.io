@@ -4,8 +4,8 @@ excerpt: "Joint industry project on the long-term cyclic response of monopile fo
 collection: portfolio
 ---
 
-**Period:** 2020–2024
-**Lead:** TU Delft, in cooperation with Deltares
+**Period:** 2020–2024  
+**Lead:** TU Delft, in cooperation with Deltares  
 **Funding:** RVO (Netherlands Enterprise Agency) / TKI Wind op Zee + industry co-funding
 
 The MIDAS research programme aims to improve the understanding of the long-term cyclic response of monopile foundations in sand through advanced physical and numerical modelling, and to develop novel engineering models and tools for monopile design.

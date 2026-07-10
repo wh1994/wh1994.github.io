@@ -51,7 +51,7 @@ Research projects
 * 2024–2026: Project manager and principal investigator, industry research project "Lateral response of piles in sands", led by NGI; funded by BP (140 K$)
 * 2024–2032: Team member, "ProWind: Norwegian Infrastructure Platform for Foundation Technology Research in Offshore Wind", led by NGI; funded by the Research Council of Norway (89 MNOK)
 * 2020–2024: Core research team member, JIP "[MIDAS](/portfolio/midas/): Monopile Improved Design through Advanced Soil cyclic modelling", at TU Delft; funded by RVO + industry co-funding (1.3 M€)
-* 2022–2025: Core research team member, EU H2020 project "[GEOLAB](https://elgip.org/geolab/)", at TU Delft; funded by the European Union (5 M€)
+* 2022–2025: Core research team member, EU H2020 project "[GEOLAB](/portfolio/geolab/)", at TU Delft; funded by the European Union (5 M€)
 
 Industry projects (selected)
 ======

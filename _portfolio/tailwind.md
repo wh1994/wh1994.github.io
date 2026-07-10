@@ -1,12 +1,12 @@
 ---
 title: "TAILWIND — Sustainable station-keeping systems for floating wind"
-excerpt: "EU-funded project on sustainable station-keeping (anchoring and mooring) systems for floating offshore wind. Technical board member, 2023–2027."
+excerpt: "EU-funded project on sustainable station-keeping (anchoring and mooring) systems for floating offshore wind. 2023–2027."
 collection: portfolio
 ---
 
-**Role:** Technical board member (2023–2027)
+**Period:** 2023–2027
 **Lead:** NGI
-**Funding:** European Union — 6 M€
+**Funding:** European Union
 
 TAILWIND develops sustainable station-keeping systems for floating offshore wind, addressing anchoring and mooring technologies that reduce cost and environmental footprint while ensuring long-term integrity of floating wind farms.
 

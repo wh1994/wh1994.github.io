@@ -1,12 +1,12 @@
 ---
 title: "MIDASclay — Monopile Improved Design through Advanced cyclic Soil modelling in clay"
-excerpt: "Follow-up JIP to MIDAS, extending advanced cyclic physical and numerical modelling of monopile foundations to clay. Core research team member, 2024–2027."
+excerpt: "Follow-up JIP to MIDAS, extending advanced cyclic physical and numerical modelling of monopile foundations to clay. 2024–2027."
 collection: portfolio
 ---
 
-**Role:** Core research team member (2024–2027)
+**Period:** 2024–2027
 **Lead:** TU Delft
-**Funding:** RVO (Netherlands Enterprise Agency) + industry co-funding — 1.75 M€
+**Funding:** RVO (Netherlands Enterprise Agency) + industry co-funding
 
 MIDASclay extends the MIDAS research programme from sand to clay, investigating the cyclic behaviour of monopile foundations in clay through centrifuge testing and advanced numerical modelling, towards improved engineering design methods for monopiles in cohesive soils.
 

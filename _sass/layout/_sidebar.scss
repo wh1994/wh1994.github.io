@@ -244,9 +244,14 @@
   }
 
   li {
+    white-space: nowrap;
+  }
+
+  // location/employer lines: wrap instead of overflowing under the main
+  // content, with a hanging indent so wrapped lines align after the icon
+  li.author__desktop {
     white-space: normal;
     overflow-wrap: break-word;
-    // hanging indent: wrapped lines align with the text after the fixed-width icon
     padding-left: 1.8em;
     text-indent: -1.8em;
   }

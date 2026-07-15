@@ -21,8 +21,8 @@ Research interests
 * Physical modelling (centrifuge, field, and element testing) and numerical modelling
 * Soil–structure interaction
 * Offshore foundation and anchor design
-* CPT-based site characterisation
-* Emerging: offshore subsea power cables — cable–soil interaction and burial integrity
+* Offshore site characterisation
+* offshore subsea power cables — cable–soil interaction and burial integrity
 
 Contact
 ======

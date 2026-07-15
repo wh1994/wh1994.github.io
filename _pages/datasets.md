@@ -25,7 +25,7 @@ Wang, H., Askarinejad, A. & Pisanò, F.
 
 Data from 23 centrifuge tests (2 monotonic, 21 cyclic) on an instrumented aluminium model pile in dense sand, conducted at TU Delft within the [MIDAS](/portfolio/midas/) project. Includes raw measurements from load cells, displacement sensors, and strain gauges (~600 MB of CSV time series with metadata), plus processed response data and Python scripts, for validating analytical and numerical monopile models.
 
-**Related publication:** [Physical modelling of cyclically loaded monopiles in sand: the MIDAS centrifuge testing programme (ISFOG 2025)](/publication/2025-06-03-physical-modelling-of-cyclically-loaded-monopiles-in-sand)
+**Related publications:** [Data article: A centrifuge test dataset for cyclically loaded monopile in dense sand (Data in Brief, under review)](/publication/2026-01-05-a-centrifuge-test-dataset-for-cyclically-loaded-monopile) · [Physical modelling of cyclically loaded monopiles in sand: the MIDAS centrifuge testing programme (ISFOG 2025)](/publication/2025-06-03-physical-modelling-of-cyclically-loaded-monopiles-in-sand)
 
 <!-- Template for each dataset entry — copy, uncomment, and fill in:
 

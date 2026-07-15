@@ -22,7 +22,7 @@ Research interests
 * Soil–structure interaction
 * Offshore foundation and anchor design
 * Offshore site characterisation
-* offshore subsea power cables — cable–soil interaction and burial integrity
+* Offshore subsea power cables — cable–soil interaction and burial integrity
 
 Contact
 ======

@@ -7,7 +7,7 @@ order: 4
 
 Geotechnical centrifuges come in two main flavours — **beam centrifuges**, which swing a model container at the end of a rotating arm, and **drum centrifuges**, where the model is built inside a spinning channel. Capacity is usually quoted in **g-tonnes** (payload × maximum acceleration).
 
-The survey below covers the facilities registered with [ISSMGE TC104](https://tc104-issmge.com/facilities/), compiled from the facility data sheets published there (as of mid-2026): **53 facilities operating 68 centrifuges** across 20 countries. I have been fortunate to work with several of them directly — the HKUST centrifuge during my Ph.D. research, and the TU Delft and Deltares machines during the MIDAS and MIDASclay programmes.
+The survey below covers the facilities registered with [ISSMGE TC104](https://tc104-issmge.com/facilities/), compiled from the facility data sheets published there (as of mid-2026): **53 facilities operating 68 centrifuges** across 18 countries. I have been fortunate to work with several of them directly — the HKUST centrifuge during my Ph.D. research, and the TU Delft and Deltares machines during the MIDAS and MIDASclay programmes.
 
 ## Where the world's centrifuges are
 
@@ -18,19 +18,18 @@ The survey below covers the facilities registered with [ISSMGE TC104](https://tc
 <strong>Centrifuges by country</strong>
 <table>
 <tr><th>Country</th><th>Machines</th></tr>
-<tr><td>China</td><td>16</td></tr>
+<tr><td>China</td><td>19</td></tr>
 <tr><td>Japan</td><td>12</td></tr>
 <tr><td>USA</td><td>9</td></tr>
 <tr><td>UK</td><td>5</td></tr>
 <tr><td>Australia</td><td>3</td></tr>
 <tr><td>Brazil</td><td>3</td></tr>
 <tr><td>Canada</td><td>2</td></tr>
-<tr><td>Hong Kong</td><td>2</td></tr>
 <tr><td>Netherlands</td><td>2</td></tr>
 <tr><td>Singapore</td><td>2</td></tr>
 <tr><td>South Korea</td><td>2</td></tr>
 <tr><td>Switzerland</td><td>2</td></tr>
-<tr><td>Austria, Denmark, France, Italy,<br>South Africa, Taiwan, Thailand, UAE</td><td>1 each</td></tr>
+<tr><td>Austria, Denmark, France, Italy,<br>South Africa, Thailand, UAE</td><td>1 each</td></tr>
 <tr><td><strong>Total</strong></td><td><strong>68</strong></td></tr>
 </table>
 </div>
@@ -51,7 +50,7 @@ Machines that were retired and never re-registered do not appear, so early decad
 </div>
 </div>
 
-Two clear trends: the **centre of gravity has shifted to East Asia** — China (16) and Japan (12) together operate more than 40% of registered machines — and the field is in the middle of a **new construction boom**, with nine machines commissioned since 2020 alone (IWHR's two new machines, HKUST's drum, NUS, Deltares, NYUAD, Hazama Ando, KMITL, Tokyo City University).
+Two clear trends: the **centre of gravity has shifted to East Asia** — China (19) and Japan (12) together operate more than 45% of registered machines — and the field is in the middle of a **new construction boom**, with nine machines commissioned since 2020 alone (IWHR's two new machines, HKUST's drum, NUS, Deltares, NYUAD, Hazama Ando, KMITL, Tokyo City University).
 
 ## Full specification survey
 
@@ -87,8 +86,8 @@ One row per machine, as self-reported in the TC104 data sheets. Capacity convent
 | TIWTE | China | 2018 | beam | 5.0 | 500 | 250 | Hydraulic structures, earthquake, offshore |
 | Tongji University | China | 2006 | beam | 3.0 | 150 | 200 | Soft soil, underground construction, earthquake |
 | Zhejiang University | China | 2009 | beam | 4.5 | 400 | 150 | Slopes, dams, earthquake, offshore |
-| HKUST — beam | Hong Kong | 2001 | beam | 4.2 | 400 | 120 | Geo-energy, geo-environment, soil–structure interaction |
-| HKUST — drum | Hong Kong | 2022 | drum | 1.1 | ~870 | 250 | Debris flows, sediment transport |
+| HKUST — beam | China (Hong Kong) | 2001 | beam | 4.2 | 400 | 120 | Geo-energy, geo-environment, soil–structure interaction |
+| HKUST — drum | China (Hong Kong) | 2022 | drum | 1.1 | ~870 | 250 | Debris flows, sediment transport |
 | CRIEPI | Japan | 2008 | beam | 3.2 | 150 | 100 | Nuclear waste, seismic stability, dams |
 | CERI (Cold Region) | Japan | 2019 | beam | 2.5 | 92.5 | 100 | Earthquakes, road-bridge seismic design |
 | DPRI Kyoto University | Japan | 1988 (renov. 2010) | beam | 2.5 | 24 | 200 | Embankments, slopes, tsunami, rainfall |
@@ -105,7 +104,7 @@ One row per machine, as self-reported in the TC104 data sheets. Capacity convent
 | KAIST (KOCED) | South Korea | 2009 | beam | 5.0 | 240 | 130 | General geotechnical research, seismic |
 | NUS — 1990 machine | Singapore | 1990 | beam | 2.0 | 40 | 200 | Land reclamation, excavation, tunnelling, offshore |
 | NUS — new machine | Singapore | 2023 | beam | 4.5 | 150 | 120 | Complex urban geotechnical conditions |
-| National Central University | Taiwan | 1995 | beam | 3.0 | 100 | 250 | Liquefaction, tunnels, slopes, offshore wind |
+| National Central University | China (Taiwan) | 1995 | beam | 3.0 | 100 | 250 | Liquefaction, tunnels, slopes, offshore wind |
 | KMITL | Thailand | 2023 | beam | 3.7 | 150 | 150 | Geotechnical research and teaching |
 
 ### Europe

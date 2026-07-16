@@ -39,7 +39,7 @@ Work experience
 Honors and awards
 ======
 * [Bright Spark Lecture](https://www.issmge.org/the-society/awards/bright-spark-lecture-award), 11th International Conference on Physical Modelling in Geotechnics (ICPMG2026)
-* Best Cyclic Test Prediction & 2nd Best Overall Prediction, GEOLAB Blind Prediction Contest on Piles under Monotonic and Cyclic Loading
+* Best Cyclic Test Prediction & 2nd Best Overall Prediction, [GEOLAB Blind Prediction Contest on Piles under Monotonic and Cyclic Loading](https://www.geotechnik.tu-darmstadt.de/forschung_ivg/blind/_blind_prediction_contest_1.en.jsp)
 * OSIGp Prize 2023 (finalist), Society for Underwater Technology, Offshore Site Investigation and Geotechnics, Perth
 
 Research projects

@@ -16,4 +16,4 @@ The overarching aim of GEOLAB is to integrate and advance these key national res
 
 **Related activities:**
 * Keynote lectures on physical modelling in offshore geotechnics at the GEOLAB Next Generation (NG) Researchers Training Workshops (Madrid 2021, Zürich 2022, Oslo 2023)
-* Best Cyclic Test Prediction & 2nd Best Overall Prediction, GEOLAB Blind Prediction Contest on Piles under Monotonic and Cyclic Loading
+* Best Cyclic Test Prediction & 2nd Best Overall Prediction, [GEOLAB Blind Prediction Contest on Piles under Monotonic and Cyclic Loading](https://www.geotechnik.tu-darmstadt.de/forschung_ivg/blind/_blind_prediction_contest_1.en.jsp)

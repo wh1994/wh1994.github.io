@@ -30,3 +30,9 @@ Huan Wang, Ph.D.
 Norwegian Geotechnical Institute  
 1 Beacon Street, Boston, MA 02108, USA  
 Email: [huan.wang@ngi.no](mailto:huan.wang@ngi.no)
+
+Visitors
+======
+<div style="max-width: 420px;">
+<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=731DMxzIE8Z-P8muAshM5TaiCk7PBzTLVnL_5_FGVws&cl=ffffff&w=a"></script>
+</div>

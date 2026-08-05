@@ -33,6 +33,4 @@ Email: [huan.wang@ngi.no](mailto:huan.wang@ngi.no)
 
 Visitors
 ======
-<div style="max-width: 420px;">
-<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=btlXb-KI32DBH9IfT2XLIHKOLm5HaRyOVDTkj67nXu4&cl=ffffff&w=a"></script>
-</div>
+<a href="https://info.flagcounter.com/zcL1"><img src="https://s01.flagcounter.com/map/zcL1/size_m/txt_000000/border_CCCCCC/pageviews_0/viewers_0/flags_0/" alt="Visitor map by country" border="0"></a>

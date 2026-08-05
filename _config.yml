@@ -13,7 +13,7 @@ title                    : "Huan Wang, Ph.D."
 title_separator          : "-"
 name                     : &name "Huan Wang"
 description              : &description "Offshore geotechnical engineering: foundations and anchors, physical and numerical modelling, soil-structure interaction"
-url                      : https://wh1994.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+url                      : https://geo-huanwang.com # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "wh1994/wh1994.github.io"
 

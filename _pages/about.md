@@ -34,5 +34,5 @@ Email: [huan.wang@ngi.no](mailto:huan.wang@ngi.no)
 Visitors
 ======
 <div style="max-width: 420px;">
-<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=8KFcYMZyMprPmgl7XK3qleul7FyxwPCrnUFppzG2sTI&cl=ffffff&w=a"></script>
+<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=btlXb-KI32DBH9IfT2XLIHKOLm5HaRyOVDTkj67nXu4&cl=ffffff&w=a"></script>
 </div>

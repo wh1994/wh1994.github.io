@@ -5,6 +5,11 @@ collection: cpt101
 order: 1
 ---
 
+<figure>
+  <a href="/images/cpt101/cpt-history.jpg"><img src="/images/cpt101/cpt-history.jpg" alt="Timeline infographic: history and development of the cone penetration test, from the 1930s Dutch mechanical cone to the modern offshore CPT ecosystem"></a>
+  <figcaption style="font-size:0.85em;">The development of the CPT — from mechanical sounding to the modern offshore digital site characterisation ecosystem (click to enlarge).</figcaption>
+</figure>
+
 The CPT began, fittingly for a test now dominant in delta soils, in the Netherlands:
 
 * **1930s — The Dutch mechanical cone.** P. Barentsen and colleagues developed the first "deep sounding" apparatus: a 10 cm² cone pushed by hand rods, reading cone resistance mechanically at the surface. The method spread quickly through the Dutch practice of founding structures on piles driven through soft ground.

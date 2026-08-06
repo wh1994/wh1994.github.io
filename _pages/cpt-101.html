@@ -1,0 +1,20 @@
+---
+layout: archive
+title: "CPT 101"
+permalink: /cpt-101/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p>The cone penetration test (CPT) is the workhorse of modern site investigation — a steel cone
+pushed steadily into the ground while measuring the resistance it feels. From those simple
+measurements flows a remarkable amount of engineering knowledge: soil stratigraphy, strength and
+stiffness, and increasingly the direct design of foundations. CPT-based site characterisation and
+CPT-based design methods are central themes of my own research, and I use this section to share
+the fundamentals, the interpretation methods, and their application to foundation design.</p>
+
+{% assign sorted = site.cpt101 | sort: 'order' %}
+{% for post in sorted %}
+  {% include archive-single.html %}
+{% endfor %}

@@ -17,6 +17,9 @@ main:
   - title: "Centrifuge 101"
     url: /centrifuge-101/
 
+  - title: "CPT 101"
+    url: /cpt-101/
+
   - title: "Datasets"
     url: /datasets/
 

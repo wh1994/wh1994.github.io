@@ -220,6 +220,9 @@ collections:
   centrifuge101:
     output: true
     permalink: /centrifuge-101/:path/
+  cpt101:
+    output: true
+    permalink: /cpt-101/:path/
   teaching:
     output: true
     permalink: /:collection/:path/
@@ -240,6 +243,14 @@ defaults:
   - scope:
       path: ""
       type: centrifuge101
+    values:
+      layout: single
+      author_profile: true
+      share: true
+  # _cpt101
+  - scope:
+      path: ""
+      type: cpt101
     values:
       layout: single
       author_profile: true

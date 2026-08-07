@@ -1,6 +1,6 @@
 ---
 title: "Interpreting the CPT: From Measurements to Soil Properties"
-excerpt: "What q_c, f_s and u_2 tell you — soil behaviour type, strength, stiffness, and consolidation properties from the three channels of a piezocone."
+excerpt: "What cone resistance, sleeve friction and pore pressure tell you — soil behaviour type, strength, stiffness, and consolidation properties from the three channels of a piezocone."
 collection: cpt101
 order: 2
 ---

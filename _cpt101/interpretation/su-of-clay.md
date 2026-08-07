@@ -1,6 +1,6 @@
 ---
 title: "Undrained Shear Strength of Clay from the CPT"
-excerpt: "The cone factor approach, how to calibrate N_kt, alternative methods, and the pitfalls — deriving s_u from piezocone data."
+excerpt: "The cone factor approach and how to calibrate it, alternative methods, and the pitfalls — deriving undrained strength from piezocone data."
 collection: cpt101
 parent: interpretation
 order: 1

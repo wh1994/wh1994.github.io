@@ -16,5 +16,7 @@ the fundamentals, the interpretation methods, and their application to foundatio
 
 {% assign sorted = site.cpt101 | sort: 'order' %}
 {% for post in sorted %}
-  {% include archive-single.html %}
+  {% unless post.parent %}
+    {% include archive-single.html %}
+  {% endunless %}
 {% endfor %}

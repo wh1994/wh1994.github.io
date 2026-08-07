@@ -24,4 +24,19 @@ The CPT does not sample — it classifies soils by how they *behave* during pene
 * **Consolidation:** the coefficient of consolidation c<sub>h</sub> from piezocone dissipation tests (t₅₀ method, Teh & Houlsby).
 * **Drainage conditions:** the normalised penetration velocity V = vd/c<sub>v</sub> indicates whether penetration is drained, undrained, or partial — a topic that connects directly to [centrifuge scaling](/centrifuge-101/02-scaling-laws/) and to intermediate soils where standard correlations need care.
 
-*Planned additions: interpretation in problematic soils — glauconitic sands (a core theme of the [PIGS](/portfolio/pigs/) JIP), carbonate soils, and intermediate silts.*
+## In-depth articles
+
+Each soil parameter deserves more than a paragraph. This series works through the interpretation methods one parameter at a time — the equations, the calibration data behind them, and the pitfalls:
+
+{% assign children = site.cpt101 | where: "parent", "interpretation" | sort: "order" %}
+{% if children.size > 0 %}
+<ul>
+{% for child in children %}
+  <li><a href="{{ child.url }}">{{ child.title }}</a>{% if child.excerpt %} — {{ child.excerpt | strip_html | strip_newlines | truncate: 120 }}{% endif %}</li>
+{% endfor %}
+</ul>
+{% else %}
+*First articles coming soon.*
+{% endif %}
+
+*Planned articles: relative density of sand, OCR and preconsolidation, K₀, friction angle, small-strain stiffness, consolidation coefficient from dissipation tests — and interpretation in problematic soils such as glauconitic sands (a core theme of the [PIGS](/portfolio/pigs/) JIP).*

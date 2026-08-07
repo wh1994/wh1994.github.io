@@ -70,3 +70,9 @@ The community's classic self-check: test the same prototype at different scales 
 The catalogue is organised as a living inventory — topics span statics, grain-size effects, in-flight testing, fluid flow, unsaturated conditions, dynamics, contaminant transport, and heat transfer, each with solved results, open questions, and references — and is maintained by [ISSMGE TC104](https://tc104-issmge.com/scaling-laws/), with updates timed to the ICPMG conference cycle.
 
 *Planned addition: a worked example of scaling a monopile centrifuge test from my own programmes.*
+
+## In-depth articles
+
+Scaling laws, one problem class at a time — consolidation, capacity, slope stability, debris flow, and more:
+
+{% include series-list.html collection="centrifuge101" parent="scaling-laws" %}

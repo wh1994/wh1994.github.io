@@ -14,3 +14,9 @@ Good centrifuge data depends as much on experimental craft as on the machine its
 * **Image-based measurement** — PIV/DIC through transparent windows for full-field displacement measurement
 
 *Planned: lessons learnt (and mistakes made) from my own testing campaigns — the things that never make it into journal papers but decide whether a test succeeds.*
+
+## In-depth articles
+
+The craft in detail — one technique or instrument at a time:
+
+{% include series-list.html collection="centrifuge101" parent="techniques" %}

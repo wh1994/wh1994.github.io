@@ -24,3 +24,9 @@ Beyond direct design verification, centrifuge tests serve a second crucial role:
 For a community-endorsed introduction, see the [TC104 fundamental principles page](https://tc104-issmge.com/fundamental-principles/).
 
 *More coming — this page will grow into a proper introduction with example results from my own testing programmes.*
+
+## In-depth articles
+
+Deeper dives into the case for centrifuge modelling, application area by application area:
+
+{% include series-list.html collection="centrifuge101" parent="why-centrifuge" %}

@@ -90,3 +90,9 @@ The technique matured into a standard research and design-verification tool: in-
 * The [TC104 history timeline](https://tc104-issmge.com/history/).
 
 *Photographs are reproduced from the two Craig papers above, with their original credits: Phillips courtesy of Ifsttar/LCPC Nantes; Bucky courtesy of Columbia University Library; Schofield and Springman provided their own images; Terzaghi from the Oklahoma State University memorial site.*
+
+## In-depth articles
+
+Longer reads on the people, machines, and landmark studies that shaped the field:
+
+{% include series-list.html collection="centrifuge101" parent="history" %}

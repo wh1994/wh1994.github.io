@@ -14,5 +14,7 @@ I use this section to share what I have learned and to point newcomers to the ri
 
 {% assign sorted = site.centrifuge101 | sort: 'order' %}
 {% for post in sorted %}
-  {% include archive-single.html %}
+  {% unless post.parent %}
+    {% include archive-single.html %}
+  {% endunless %}
 {% endfor %}

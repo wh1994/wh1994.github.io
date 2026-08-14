@@ -9,6 +9,21 @@ author_profile: true
 
 Curated research datasets from my experimental programmes, hosted on external repositories. All datasets are openly available under CC BY 4.0.
 
+## Sand Triaxial Test Database: drained monotonic triaxial compression tests on 32 granular materials
+**Repository:** [4TU.ResearchData](https://doi.org/10.4121/086847a6-ba39-4d66-973b-6b93028c7ad8) · **DOI:** 10.4121/086847a6-ba39-4d66-973b-6b93028c7ad8 · **Year:** 2026
+
+Wang, H.
+
+This dataset is a curated database of drained monotonic triaxial compression tests on granular soils, compiled from published literature and open datasets into a single, uniform, machine-readable format. It covers 32 materials — 30 natural and industrial sands, one rockfill, and one set of glass beads — tested at 18 laboratories worldwide, comprising 195 isotropically consolidated tests with approximately 42,000 digitized measurement records of axial strain, volumetric strain, and effective radial and vertical stress.
+
+The materials span a wide range of gradations (median grain size d50 from 0.12 to 7.2 mm, coefficient of uniformity Cu from 1.0 to 431) and the tests cover initial relative densities from very loose to very dense and effective confining stresses from 20 to 3500 kPa. Each material is stored as a single self-contained CSV file with six standardized sections: file information, full source references with DOIs, index properties (d50, Cu, Gs, e_max, e_min, critical-state friction angle), particle size distribution(s), a test programme catalogue (initial stresses, void ratio, relative density per test), and the stress–strain–volumetric measurement records. An index file summarizes all materials for browsing, and a README documents the format, sign conventions, and ready-to-use Python code for reading the files. Empty cells consistently indicate values not reported in the original source; most test curves were digitized from published figures and carry the usual digitization tolerance.
+
+The database is intended as a benchmark resource for the development, calibration, and validation of constitutive models for sand, for data-driven and machine-learning approaches to soil behaviour, and for comparative studies of monotonic sand response across gradations, densities, and stress levels. The compilation draws on the cited publications, the GEOLAB Material Properties Database, and the SoilModels standard datasets.
+
+This database is a compilation of previously published experimental work. Users are kindly asked to cite both this database and the original source publication(s) of each material they use; the sources are listed per material in the SOURCES section of each CSV file and compiled in references.csv.
+
+**Related article:** [An Open Database of Drained Monotonic Triaxial Tests on Sands (blog post)](/posts/2026/08/sand-triaxial-database/)
+
 ## MIDAS centrifuge dataset: Cyclic lateral response of monopiles in sand from centrifuge tests conducted at Deltares
 **Repository:** [4TU.ResearchData](https://doi.org/10.4121/fa710994-f591-453a-b9c8-2759d6cd2f21) · **DOI:** 10.4121/fa710994-f591-453a-b9c8-2759d6cd2f21 · **Year:** 2026
 
@@ -41,4 +56,4 @@ One- or two-sentence description of the dataset: what was tested, what is includ
 
 -->
 
-Both datasets were produced within the [MIDAS](/portfolio/midas/) joint industry project (RVO grant TEHE111013).
+The two centrifuge datasets were produced within the [MIDAS](/portfolio/midas/) joint industry project (RVO grant TEHE111013).

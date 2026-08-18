@@ -138,14 +138,11 @@ peak, scales with √σ′_r0.
    level is secondary; what neither explains is mostly intrinsic friction —
    φ_c spans 29–38° across the database, so at identical (D_r, σ′) two sands can
    differ by several degrees in φ_peak without any dilatancy difference.
-3. **Physics-based screening pays off**: the strength–dilatancy consistency check
-   caught a sign-convention error in one source dataset (six tests) that simple
-   range checks would never flag.
-4. **Normalization reveals structure**: mobilized strength against
+3. **Normalization reveals structure**: mobilized strength against
    √stress-normalized shear strain collapses all sands onto a nearly universal
    mobilization curve, halving the apparent cross-sand variability — evidence that
    much of the spread in raw stress–strain space is scale, not shape. The same
    scaling tightens the volumetric bands by ~20 %.
-5. **What stays irreducible** is the post-peak softening of dense sands and the
+4. **What stays irreducible** is the post-peak softening of dense sands and the
    magnitude of dilation — the natural targets for material-specific descriptors
    (d50, Cu, φ_c, particle shape) in any predictive model.

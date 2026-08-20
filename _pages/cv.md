@@ -44,14 +44,14 @@ Honors and awards
 
 Research projects
 ======
-* 2025–2027: Core research team member, JIP "Cost Optimized Foundation Design (COFD): Estimating CPT and Soil Parameters by 3GEO", led by NGI and ZJU; funded by CNOOC and QIMG (1.2 M¥)
-* 2024–2027: Core research team member, JIP "[MIDASclay](/portfolio/midasclay/): Monopile Improved Design through Advanced cyclic Soil modelling in clay", led by TU Delft; funded by RVO + industry co-funding (1.75 M€)
-* 2023–2027: Technical board member, EU project "[TAILWIND](/portfolio/tailwind/): Sustainable station-keeping systems for floating wind", led by NGI; funded by the EU (6 M€)
-* 2023–2027: Core research team member, JIP "[PIGS](/portfolio/pigs/): Piling in Glauconitic Sand", led by NGI; funded by industry partners (5 M$, Phases 1–4)
-* 2024–2026: Project manager and principal investigator, industry research project "Lateral response of piles in sands", led by NGI; funded by BP (140 K$)
-* 2024–2032: Team member, "ProWind: Norwegian Infrastructure Platform for Foundation Technology Research in Offshore Wind", led by NGI; funded by the Research Council of Norway (89 MNOK)
-* 2020–2024: Core research team member, JIP "[MIDAS](/portfolio/midas/): Monopile Improved Design through Advanced Soil cyclic modelling", at TU Delft; funded by RVO + industry co-funding (1.3 M€)
-* 2022–2025: Core research team member, EU H2020 project "[GEOLAB](/portfolio/geolab/)", at TU Delft; funded by the European Union (5 M€)
+* 2025–2027: JIP "Cost Optimized Foundation Design (COFD): Estimating CPT and Soil Parameters by 3GEO", led by NGI and ZJU; funded by CNOOC and QIMG
+* 2024–2027: JIP "[MIDASclay](/portfolio/midasclay/): Monopile Improved Design through Advanced cyclic Soil modelling in clay", led by TU Delft; funded by RVO + industry co-funding
+* 2023–2027: EU project "[TAILWIND](/portfolio/tailwind/): Sustainable station-keeping systems for floating wind", led by NGI; funded by the EU
+* 2023–2027: JIP "[PIGS](/portfolio/pigs/): Piling in Glauconitic Sand", led by NGI; funded by industry partners (Phases 1–4)
+* 2024–2026: Industry research project "Lateral response of piles in sands", led by NGI; funded by BP
+* 2024–2032: "ProWind: Norwegian Infrastructure Platform for Foundation Technology Research in Offshore Wind", led by NGI; funded by the Research Council of Norway
+* 2020–2024: JIP "[MIDAS](/portfolio/midas/): Monopile Improved Design through Advanced Soil cyclic modelling", at TU Delft; funded by RVO + industry co-funding
+* 2022–2025: EU H2020 project "[GEOLAB](/portfolio/geolab/)", at TU Delft; funded by the European Union
 
 Industry projects (selected)
 ======

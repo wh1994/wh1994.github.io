@@ -1,8 +1,8 @@
 ---
-title: "An Open Database of Drained Monotonic Triaxial Tests on Sands"
-date: 2026-08-14
-permalink: /posts/2026/08/sand-triaxial-database/
-excerpt: "287 drained monotonic triaxial compression tests on 49 granular materials, compiled into a single uniform, machine-readable format and released under CC-BY-4.0 on 4TU.ResearchData."
+title: "Sand Triaxial Test Database — Updated: Now 357 Tests on 57 Granular Materials"
+date: 2026-08-29
+permalink: /posts/2026/08/sand-triaxial-database-update/
+excerpt: "An updated release of the open sand triaxial database: 357 drained monotonic triaxial compression tests on 57 granular materials, now including Baskarp sand, six systematically graded sand–gravel mixtures, and effective stress paths."
 tags:
   - sand
   - triaxial test
@@ -12,6 +12,15 @@ tags:
 toc: true
 toc_sticky: true
 ---
+
+> **Update note.** This article describes an updated release of the database
+> first presented in
+> [the original article (August 2026)](/posts/2026/08/sand-triaxial-database/).
+> New in this release: **70 additional tests and 8 new materials** — Baskarp
+> sand No. 15 (30 tests down to 5 kPa confining stress), six systematically
+> graded UC Davis sand–gravel mixtures, and Orange County silica sand — plus
+> effective stress paths in the example figure and consolidation metadata
+> ($$K_c$$, OCR) for every test.
 
 > **Data availability.** The database is openly available under a CC-BY-4.0 license
 > on 4TU.ResearchData: [doi.org/10.4121/086847a6-ba39-4d66-973b-6b93028c7ad8](https://doi.org/10.4121/086847a6-ba39-4d66-973b-6b93028c7ad8).
@@ -32,10 +41,11 @@ study knows the routine: hunting down PDFs, digitizing stress–strain curves,
 and reconciling conventions, material by material.
 
 This database is an attempt to do that work once, carefully, and share the
-result. It compiles **287 drained monotonic triaxial compression tests on 49
-granular materials** — 42 natural sand datasets from laboratories across
-Europe, North America, Asia, and Australia (including seven sieve fractions of
-a single fluvial sand), six glass-bead materials, and one rockfill as end
+result. It compiles **357 drained monotonic triaxial compression tests on 57
+granular materials** — 50 natural sand and coarse-grained soil datasets from
+laboratories across Europe, North America, Asia, and Australia (including
+seven sieve fractions of a single fluvial sand and six systematically graded
+sand–gravel mixtures), six glass-bead materials, and one rockfill as end
 members — into a single, uniform, machine-readable format. Every test is
 traceable to its published source.
 
@@ -46,7 +56,7 @@ fine to coarse), showing the median grain size $$d_{50}$$, the initial effective
 confining stress, initial relative density, and initial void ratio of every
 test, and the number of tests per material.
 
-![Coverage of the sand triaxial test database: median grain size, initial confining stress, initial relative density, and initial void ratio of all 287 tests on 49 materials](/images/posts/sand-triaxial-database/database_coverage.png)
+![Coverage of the sand triaxial test database: median grain size, initial confining stress, initial relative density, and initial void ratio of all 357 tests on 57 materials](/images/posts/sand-triaxial-database-update/database_coverage.png)
 
 A few observations on the coverage:
 
@@ -55,15 +65,16 @@ A few observations on the coverage:
   through coarse sand into gravel. Most materials are clean fine-to-medium
   silica sands, the type most relevant to offshore foundation and liquefaction
   problems.
-- **Stress level.** Initial effective confining stresses span 20 kPa to
-  3.5 MPa. The bulk of the tests sit in the 50–500 kPa range typical of
-  onshore and offshore foundation engineering; the rockfill tests extend the
-  database to dam-scale stresses.
+- **Stress level.** Initial effective confining stresses span 5 kPa
+  (Baskarp sand) to 3.5 MPa. The bulk of the tests sit in the 50–500 kPa
+  range typical of onshore and offshore foundation engineering; the rockfill
+  tests extend the database to dam-scale stresses.
 - **Density.** Initial relative densities cover the full spectrum from
   looser-than-loosest-standard states ($$D_{r0}$$ < 0 % on Toyoura and Changi sand)
-  to very dense ($$D_{r0}$$ ≈ 100 %). Several materials — Karlsruhe fine sand being
-  the richest, with 25 tests — provide systematic density–stress grids well
-  suited for calibrating state-dependent models.
+  to very dense ($$D_{r0}$$ ≈ 100 %). Several materials — Baskarp sand No. 15
+  (30 tests) and Karlsruhe fine sand (25 tests) being the richest — provide
+  systematic density–stress grids well suited for calibrating
+  state-dependent models.
 - **Replication across laboratories.** Three materials were deliberately
   included with data from multiple laboratories: Fontainebleau NE34 sand
   (Université Gustave Eiffel, DTU, KIT), UWA superfine silica sand (two
@@ -72,13 +83,15 @@ A few observations on the coverage:
   datasets allow inter-laboratory scatter to be assessed — a useful reality
   check on how precisely any model should be expected to fit a single test
   series.
-- **Systematic parametric series.** Two material families isolate a single
+- **Systematic parametric series.** Three material families isolate a single
   grain-scale variable: the seven sieve fractions of Istanbul fluvial sand
   (35a–g) vary particle size at essentially constant mineralogy and shape,
-  and the five glass-bead mixtures (38a–e) vary the proportion of angular to
-  rounded particles at constant size — clean benchmarks for studying particle
-  size and shape effects, or for testing whether a model's parameters
-  correlate with grading and shape descriptors.
+  the six UC Davis coarse-grained soils (41a–f) vary gradation from uniform
+  sands to broadly graded sand–gravel mixtures, and the five glass-bead
+  mixtures (38a–e) vary the proportion of angular to rounded particles at
+  constant size — clean benchmarks for studying particle size, gradation, and
+  shape effects, or for testing whether a model's parameters correlate with
+  grading and shape descriptors.
 
 ## The index
 
@@ -91,7 +104,7 @@ source.
 |---|----------|------|------|------|------|------|------|------|------|------|------|-------------|
 | 01 | Karlsruhe fine sand | natural silica sand | 0.14 | 1.5 | 2.65 | 1.054 | 0.677 | 33.1 | 25 | 49–401 | 15–95 | [Wichtmann & Triantafyllidis (2016)](https://doi.org/10.1007/s11440-015-0402-z) |
 | 02 | Geba sand | natural silica sand | 0.119 | 1.59 | 2.67 | 1.07 | 0.64 | 31.7 | 5 | 55–406 | 41–76 | [Liu et al. (2026)](https://doi.org/10.1016/j.soildyn.2026.110177) |
-| 03 | Hokksund sand | natural sand | 0.38 | 2.04 | 2.71 | – | – | 38 | 12 | 125–700 | 30–87 | [Tadesse (2000)](https://urn.nb.no/URN:NBN:no-nb_digibok_2016042208014) |
+| 03 | Hokksund sand | natural sand | 0.38 | 2.04 | 2.71 | 0.9531 | 0.5723 | 38 | 12 | 125–700 | 30–87 | [Tadesse (2000)](https://urn.nb.no/URN:NBN:no-nb_digibok_2016042208014) |
 | 04 | Perth sand | natural silica sand | 0.2 | 1.53 | 2.65 | 0.98 | 0.471 | 29.6 | 4 | 50–400 | 90 | [Sakellariadis & Anastasopoulos (2022)](https://doi.org/10.1680/jgeot.21.00236) |
 | 05 | Darmstadt sand | natural sand | 0.48 | 2.41 | 2.617 | 0.788 | 0.444 | 32.7 | 6 | 50–500 | 28–89 | [GEOLAB database, Beroya-Eitner et al. (2024)](https://doi.org/10.5281/zenodo.12697903) |
 | 06 | Fontainebleau sand (Eiffel) | natural silica sand | 0.21 | 1.466 | 2.65 | 0.87 | 0.53 | 31.5 | 9 | 100–400 | 46–87 | [Li (2013)](https://doi.org/10.6084/m9.figshare.21707075) |
@@ -138,6 +151,14 @@ source.
 | 38d | Glass beads (A75R25) | glass beads | 0.71 | 1.12 | 2.35 | 0.827 | 0.625 | – | 5 | 50–400 | 60 | [Xiao et al. (2019)](https://doi.org/10.1061/%28ASCE%29GT.1943-5606.0001994) |
 | 38e | Glass beads (A100R0) | glass beads | 0.71 | 1.12 | 2.35 | 0.867 | 0.66 | – | 5 | 50–400 | 60 | [Xiao et al. (2019)](https://doi.org/10.1061/%28ASCE%29GT.1943-5606.0001994) |
 | 39 | UWA superfine silica sand (Du) | natural silica sand | 0.18 | 1.67 | 2.65 | 0.7809 | 0.5028 | 33 | 9 | 50–400 | 37–70 | [Du (2024)](https://doi.org/10.26182/r8za-1541) |
+| 40 | Baskarp sand No. 15 | natural silica sand | 0.14 | 1.78 | 2.64 | 0.858 | 0.549 | 30.6 | 30 | 5–800 | 1–83 | Nielsen & Nielsen (2018) |
+| 41a | UC Davis coarse-grained soil (100A) | natural coarse-grained soil | 0.18 | 1.74 | 2.62 | 0.881 | 0.579 | – | 5 | 100–500 | 23–65 | [Ahmed et al. (2022)](https://doi.org/10.17603/ds2-crtg-j217) |
+| 41b | UC Davis coarse-grained soil (100C) | natural coarse-grained soil | 1.31 | 1.53 | 2.61 | 0.839 | 0.557 | – | 6 | 100–700 | 14–65 | [Ahmed et al. (2022)](https://doi.org/10.17603/ds2-crtg-j217) |
+| 41c | UC Davis coarse-grained soil (100D) | natural coarse-grained soil | 2.58 | 1.53 | 2.6 | 0.812 | 0.54 | – | 5 | 100–500 | 17–69 | [Ahmed et al. (2022)](https://doi.org/10.17603/ds2-crtg-j217) |
+| 41d | UC Davis coarse-grained soil (33ABC) | natural coarse-grained soil | 0.51 | 4.4 | 2.61 | 0.622 | 0.397 | – | 6 | 100–701 | 21–66 | [Ahmed et al. (2022)](https://doi.org/10.17603/ds2-crtg-j217) |
+| 41e | UC Davis coarse-grained soil (25ABCD) | natural coarse-grained soil | 0.8 | 7.43 | 2.61 | 0.544 | 0.303 | – | 5 | 100–500 | 16–65 | [Ahmed et al. (2022)](https://doi.org/10.17603/ds2-crtg-j217) |
+| 41f | UC Davis coarse-grained soil (12CU) | natural coarse-grained soil | 1.55 | 12.34 | 2.61 | 0.45 | 0.276 | – | 6 | 100–500 | 17–90 | [Ahmed et al. (2022)](https://doi.org/10.17603/ds2-crtg-j217) |
+| 42 | Orange County silica sand | natural silica sand | – | – | 2.65 | 0.958 | 0.792 | 35 | 7 | 100–400 | 0–6 | [Eslami et al. (2017)](https://doi.org/10.17603/DS23T00) |
 
 *$$d_{50}$$ = median grain size; $$C_u$$ = coefficient of uniformity; $$G_s$$ = specific
 gravity; $$e_{max}$$ / $$e_{min}$$ = maximum / minimum void ratio; $$\varphi_c$$ = critical state
@@ -163,15 +184,19 @@ external documentation:
 4. **PARTICLE_SIZE_DISTRIBUTION** — grain diameter vs. percent finer by
    weight; multiple sievings are stacked in long format.
 5. **TEST_PROGRAMME** — one row per test: drainage, loading and consolidation
-   conditions, initial stresses, initial void ratio $$e_0$$ and relative density
-   $$D_{r0}$$, number of data points, and the source of the data.
+   conditions (including the consolidation stress ratio $$K_c$$ and
+   overconsolidation ratio OCR), initial stresses, initial void ratio $$e_0$$ and
+   relative density $$D_{r0}$$, number of data points, the source of the data, and
+   the test ID used in the original publication.
 6. **TEST_DATA** — the measurement records themselves:
    `test_id, eps_a[%], eps_v[%], sigma_r[kPa], sigma_v[kPa]`.
 
-The conventions are deliberately strict and uniform across all 49 files:
+The conventions are deliberately strict and uniform across all 57 files:
 
-- All tests are **drained monotonic triaxial compression tests**,
-  isotropically consolidated.
+- All tests are **drained monotonic triaxial compression tests**. Most are
+  isotropically and normally consolidated; the exceptions (26 anisotropically
+  consolidated tests and one overconsolidated test) are identified by the
+  $$K_c$$ and OCR columns in `TEST_PROGRAMME`.
 - **Compression positive** for strains and stresses; all stresses are
   effective stresses in kPa.
 - An **empty cell always means "not reported in the source"** — never zero.
@@ -185,16 +210,16 @@ DataFrame.
 
 ## An example: Karlsruhe fine sand
 
-To show what the test data actually look like, the figure below plots the
-richest dataset in the database: the 25 tests on Karlsruhe fine sand
+To show what the test data actually look like, the figure below plots one of
+the richest datasets in the database: the 25 tests on Karlsruhe fine sand
 ([Wichtmann & Triantafyllidis, 2016](https://doi.org/10.1007/s11440-015-0402-z)).
 Each row is one confining stress level ($$\sigma'_{r0}$$ ≈ 50, 100, 200, 300, and
-400 kPa); the left column shows the deviator stress $$q$$ and the right column the
-volumetric strain $$\varepsilon_v$$, both against axial strain $$\varepsilon_a$$, with five relative
-densities from loose ($$D_{r0}$$ ≈ 15–25 %) to dense ($$D_{r0}$$ ≈ 85–95 %) at each
-stress level.
+400 kPa); the columns show the deviator stress $$q$$ and the volumetric strain
+$$\varepsilon_v$$ against axial strain $$\varepsilon_a$$, and the effective stress path in the $$q$$–$$p'$$
+plane, with five relative densities from loose ($$D_{r0}$$ ≈ 15–25 %) to dense
+($$D_{r0}$$ ≈ 85–95 %) at each stress level.
 
-![Drained monotonic triaxial compression tests on Karlsruhe fine sand: deviator stress and volumetric strain versus axial strain at five confining stress levels and five relative densities each](/images/posts/sand-triaxial-database/karlsruhe_fine_sand_tests.png)
+![Drained monotonic triaxial compression tests on Karlsruhe fine sand: deviator stress and volumetric strain versus axial strain, and effective stress paths, at five confining stress levels and five relative densities each](/images/posts/sand-triaxial-database-update/karlsruhe_fine_sand_tests.png)
 
 The dataset is a textbook illustration of state-dependent sand behaviour, and
 of why a systematic density–stress grid is so valuable for calibration: dense
@@ -234,7 +259,7 @@ than left for the user to discover.
   the angular/rounded glass-bead mixtures isolate single grain-scale
   variables — rare, systematic series for linking grain properties to
   macroscopic behaviour.
-- **Machine learning**: 287 uniformly formatted stress–strain–dilatancy
+- **Machine learning**: 357 uniformly formatted stress–strain–dilatancy
   curves with consistent metadata (initial state, index properties, grading)
   make a clean starting point for data-driven modelling of granular soils.
 - **Teaching**: real, traceable test data on well-known reference sands
@@ -254,7 +279,7 @@ and the [SoilModels sand and clay standard datasets](https://soilmodels.com/sand
 Please cite the database as:
 
 > Wang, H. (2026). *Sand Triaxial Test Database: drained monotonic triaxial
-> compression tests on 49 granular materials* [Data set]. 4TU.ResearchData.
+> compression tests on 57 granular materials* [Data set]. 4TU.ResearchData.
 > https://doi.org/10.4121/086847a6-ba39-4d66-973b-6b93028c7ad8
 
 and cite the original data source(s), listed in each material file's

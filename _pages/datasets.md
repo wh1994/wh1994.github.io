@@ -20,6 +20,8 @@ The materials span a wide range of gradations (median grain size d50 from 0.10 t
 
 The database is intended as a benchmark resource for the development, calibration, and validation of constitutive models for sand, for data-driven and machine-learning approaches to soil behaviour, and for comparative studies of monotonic sand response across gradations, densities, and stress levels. Users are asked to cite, alongside this database, the original data sources listed in each material file. The compilation draws on the cited publications, the GEOLAB Material Properties Database, and the SoilModels standard datasets.
 
+![Map of the testing laboratories in the Sand Triaxial Test Database: 25 institutions across 15 countries, marker size proportional to the number of materials tested](/images/posts/sand-triaxial-database-update/lab_map.png)
+
 **Related articles:** [An Open Database of Drained Monotonic Triaxial Tests on Sands (blog post)](/posts/2026/08/sand-triaxial-database/) · [Updated release: 357 tests on 57 granular materials (blog post)](/posts/2026/08/sand-triaxial-database-update/)
 
 ## MIDAS centrifuge dataset: Cyclic lateral response of monopiles in sand from centrifuge tests conducted at Deltares

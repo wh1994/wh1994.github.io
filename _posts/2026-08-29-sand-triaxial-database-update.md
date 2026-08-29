@@ -93,6 +93,13 @@ A few observations on the coverage:
   shape effects, or for testing whether a model's parameters correlate with
   grading and shape descriptors.
 
+The tests come from 25 institutions across 15 countries. The map below shows
+each testing laboratory, with the marker size proportional to the number of
+materials tested there (four materials without a reported laboratory are not
+shown).
+
+![Map of the testing laboratories in the sand triaxial test database: 25 institutions across 15 countries, marker size proportional to the number of materials tested](/images/posts/sand-triaxial-database-update/lab_map.png)
+
 ## The index
 
 The table below is the database index (`index.csv`): one row per material with

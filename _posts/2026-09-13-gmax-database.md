@@ -40,7 +40,19 @@ Together: **1,045 measurements, 95 distinct materials, 32 source studies**, span
 The two sources report different variable sets. Harmonization decisions, all recorded per record in a provenance column:
 
 - **Stress.** OB2013 stores mean effective stress p′ (converted MPa→kPa); LO2021 stores the isotropic consolidation stress σ′₃, taken as p′ (`p_mean_provenance = "assumed equal to sigma3 (isotropic)"`).
-- **Index void ratios.** LO2021 reports e<sub>max</sub>/e<sub>min</sub> directly (789 records). OB2013 does not — but it stores (e<sub>0</sub>, D<sub>r</sub>) per test, and since D<sub>r</sub> = (e<sub>max</sub>−e<sub>0</sub>)/(e<sub>max</sub>−e<sub>min</sub>), the points of one sand fall on the exact straight line e<sub>0</sub> = e<sub>max</sub> + D<sub>r</sub>(e<sub>min</sub>−e<sub>max</sub>). For every sand tested at ≥2 densities the pair was recovered **exactly** (fit residuals < 2×10⁻⁶; 122 records). For single-density sands the values were taken from the original papers and accepted only if they reproduce the stored D<sub>r</sub> within ±0.015 (61 records). 73 records (mostly gravels in paywalled sources) remain without limits.
+- **Index void ratios.** LO2021 reports e<sub>max</sub>/e<sub>min</sub> directly (789 records). OB2013 does not — but it stores (e<sub>0</sub>, D<sub>r</sub>) per test, and since
+
+$$
+D_r = \frac{e_{\max}-e_0}{e_{\max}-e_{\min}},
+$$
+
+The points of one sand fall on the exact straight line
+
+$$
+e_0 = e_{\max} + D_r\,(e_{\min}-e_{\max}).
+$$
+
+For every sand tested at ≥2 densities the pair was recovered **exactly** (fit residuals < 2×10⁻⁶; 122 records). For single-density sands the values were taken from the original papers and accepted only if they reproduce the stored D<sub>r</sub> within ±0.015 (61 records). 73 records (mostly gravels in paywalled sources) remain without limits.
 
 The recovery uncovered several data-forensics results worth recording:
 
@@ -61,9 +73,15 @@ Anomalies in the sources (D<sub>r</sub> up to 112%, e<sub>0</sub> < e<sub>min</s
 Key observations:
 
 - **No confounding between state and stress**: log p′ is uncorrelated with both D<sub>r</sub> (−0.02) and e<sub>0</sub> (−0.02) — the database supports unbiased estimation of both effects.
-- **log G<sub>max</sub> is driven by log p′ (+0.73), then e<sub>0</sub> (−0.35) and D<sub>r</sub> (+0.26).** The pooled fit G<sub>max</sub> = 109·(p′/100 kPa)^0.46 MPa (ρ = 0.73 in log–log) recovers the classic ≈0.5 stress exponent.
+- **log G<sub>max</sub> is driven by log p′ (+0.73), then e<sub>0</sub> (−0.35) and D<sub>r</sub> (+0.26).** The pooled power-law fit (shown below; ρ = 0.73 in log–log) recovers the classic ≈0.5 stress exponent.
 - **Grading acts through void ratio**: e<sub>0</sub> correlates with log C<sub>u</sub> (−0.61) and log D<sub>50</sub> (−0.51) — better-graded and coarser materials pack denser — while the direct correlations of grading with G<sub>max</sub> are weak once stress is accounted for.
 - Detrending the stress effect leaves a void-ratio slope of −0.46 per unit e<sub>0</sub> on log G<sub>max</sub> (ρ = −0.50): denser is stiffer, in Hardin-type fashion.
+
+The pooled power-law fit is
+
+$$
+G_{\max} = 109\left(\frac{p^{\prime}}{100\,\mathrm{kPa}}\right)^{0.46}\,\mathrm{MPa}.
+$$
 
 A structural caution that shapes everything downstream: the Wichtmann & Triantafyllidis quartz series contributes 623 of 1,045 tests (25 artificially graded sands from one laboratory). **Test-weighted statistics therefore mostly measure agreement with one source.** All model evaluation below reports *per-sand balanced* metrics (every material counts equally) alongside conventional per-test values.
 
@@ -71,14 +89,35 @@ A structural caution that shapes everything downstream: the Wichtmann & Triantaf
 
 ## 3. Performance of existing correlations
 
-Four correlations spanning three generations were evaluated exactly as coded in engineering practice (all in kPa, p<sub>a</sub> = 100 kPa):
+Four correlations spanning three generations were evaluated exactly as coded in engineering practice (G₀ and stresses in kPa, $p_a$ = 100 kPa):
 
-| # | Correlation | Form |
-|---|---|---|
-| 1 | Hardin & Richart (1963), angular | G₀ = 3270 (2.97−e)²/(1+e) √p′ |
-| 2 | Oztoprak & Bolton (2013) mean | G₀ = 5760 p<sub>a</sub>/(1+e)³ (p′/p<sub>a</sub>)^0.49 |
-| 3 | Wang (2022) | G₀ = 64,300 C<sub>u</sub>^−0.21 e^(−1.08−(0.09D₅₀)^0.51) (p′/p<sub>a</sub>)^(0.47D₅₀^0.06) |
-| 4 | Wichtmann & Triantafyllidis (2009) | G₀ = (1563+3.13C<sub>u</sub>^2.98)·(a−e)²/(1+e)·p′ⁿp<sub>a</sub>^(1−n), a = 1.94e^(−0.066C<sub>u</sub>), n = 0.4C<sub>u</sub>^0.18 |
+**Hardin & Richart (1963), angular-grain form:**
+
+$$
+G_0 = 3270\,\frac{(2.97-e_0)^2}{1+e_0}\,\sqrt{p'}
+$$
+
+**Oztoprak & Bolton (2013), mean curve:**
+
+$$
+G_0 = 5760\,\frac{p_a}{(1+e_0)^3}\left(\frac{p'}{p_a}\right)^{0.49}
+$$
+
+**Wang (2022):**
+
+$$
+G_0 = 64{,}300\; C_u^{-0.21}\; e_0^{\,-1.08-(0.09\,D_{50})^{0.51}} \left(\frac{p'}{p_a}\right)^{0.47\,D_{50}^{0.06}}
+$$
+
+**Wichtmann & Triantafyllidis (2009):**
+
+$$
+\begin{aligned}
+G_0 &= \left(1563 + 3.13\,C_u^{2.98}\right)\frac{(a-e_0)^2}{1+e_0}\; (p^{\prime})^{n}\,p_a^{1-n}, \\
+a &= 1.94\,\exp\!\left(-0.066\,C_u\right), \\
+n &= 0.40\,C_u^{0.18}.
+\end{aligned}
+$$
 
 ![Figure 3 — benchmark](/images/posts/gmax-database/fig_g0_benchmark.png)
 *Figure 3. Predicted vs measured G<sub>max</sub> for the four correlations (dashed lines: factor 2).*
@@ -104,7 +143,9 @@ Findings:
 
 Nested Hardin-type candidates (2–5 parameters, C<sub>u</sub>/D<sub>50</sub> multipliers, C<sub>u</sub>-dependent stress exponents, a recalibrated W&T form) were fitted in log space with per-sand weights and selected by **sand-grouped 5-fold cross-validation** — whole sands held out, so the score measures transfer to unseen materials — using the per-sand balanced RMS. The winner (4 parameters):
 
-**G<sub>max</sub> = 40.8 · (2.97−e₀)²/(1+e₀) · C<sub>u</sub>^−0.073 · (p′/p<sub>a</sub>)^(0.26+0.34 log₁₀C<sub>u</sub>)  [MPa]**
+$$
+G_{\max} = 40.8\;\frac{(2.97-e_0)^2}{1+e_0}\; C_u^{-0.073} \left(\frac{p'}{p_a}\right)^{0.26\,+\,0.34\log_{10}C_u} \;\;\text{[MPa]}
+$$
 
 The C<sub>u</sub>-dependent stress exponent (0.31 for uniform sands → ~0.9 for well-graded gravels) is the only grading feature that survived held-out-sand validation; richer forms (free Hardin constant, D<sub>50</sub> terms) did not. Residual diagnostics (Figure 4) are trend-free in p′, e<sub>0</sub> and C<sub>u</sub>.
 
@@ -176,10 +217,16 @@ The database is prepared for publication on 4TU.ResearchData (`Gmax/publication/
 
 ## References
 
-Charles, J.A., Oztoprak, S. & Gourvenec, S.M. (2022). Dataset in support of "Recovering shear stiffness degradation curves from classification data with a neural network approach". Univ. of Southampton. DOI 10.5258/SOTON/D2101.
-Hardin, B.O. & Richart, F.E. (1963). Elastic wave velocities in granular soils. J. Soil Mech. Found. Div. ASCE 89(1), 33–65.
-Lo, M.K., Wei, X., Chian, S.C. & Ku, T. (2021). Bayesian network prediction of stiffness and shear strength of sand. J. Geotech. Geoenviron. Eng. 147(5), 04021020.
-Oztoprak, S. & Bolton, M.D. (2013). Stiffness of sands through a laboratory test database. Géotechnique 63(1), 54–70.
-Wang, Y. (2022). Development of constitutive models for linear and nonlinear shear modulus and material damping ratio of uncemented soils. PhD-report, Univ. of Texas.
-Wichtmann, T. & Triantafyllidis, T. (2009). Influence of the grain-size distribution curve of quartz sand on the small strain shear modulus G<sub>max</sub>. J. Geotech. Geoenviron. Eng. 135(10), 1404–1418.
+- Charles, J.A., Oztoprak, S. & Gourvenec, S.M. (2022). Dataset in support of "Recovering shear stiffness degradation curves from classification data with a neural network approach". Univ. of Southampton. DOI 10.5258/SOTON/D2101.
+
+- Hardin, B.O. & Richart, F.E. (1963). Elastic wave velocities in granular soils. J. Soil Mech. Found. Div. ASCE 89(1), 33–65.
+
+- Lo, M.K., Wei, X., Chian, S.C. & Ku, T. (2021). Bayesian network prediction of stiffness and shear strength of sand. J. Geotech. Geoenviron. Eng. 147(5), 04021020.
+
+- Oztoprak, S. & Bolton, M.D. (2013). Stiffness of sands through a laboratory test database. Géotechnique 63(1), 54–70.
+
+- Wang, Y. (2022). Development of constitutive models for linear and nonlinear shear modulus and material damping ratio of uncemented soils. PhD-report, Univ. of Texas.
+
+- Wichtmann, T. & Triantafyllidis, T. (2009). Influence of the grain-size distribution curve of quartz sand on the small strain shear modulus G<sub>max</sub>. J. Geotech. Geoenviron. Eng. 135(10), 1404–1418.
+
 *(Full list of the 32 data-source studies: `publication/GMAX_references.csv`.)*
